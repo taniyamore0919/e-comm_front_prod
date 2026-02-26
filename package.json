@@ -3,12 +3,10 @@
   "name": "back",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "dev" : "nodemon --env-file=.env.development app",
-    "prod" : "nodemon --env-file=.env.production app",
-    "start" : "nodemon app",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --env-file=.env.development app.js",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +24,8 @@
     "razorpay": "^2.9.6",
     "sha1": "^1.1.1",
     "unique-string-generator": "^1.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
   }
 }
